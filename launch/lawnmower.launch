@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- Start the simulator -->
+  <node name="stage_simulator" pkg="stage_ros" type="stageros"
+        respawn="false" output="screen"
+        args="$(find rps_stage_worlds)/worlds/empty_rps.world">
+  </node>
+
+  <!-- Start the controller -->
+  <node name="lawnmower_controller" pkg="wander" type="lawnmower.py"
+        respawn="false" output="screen">
+  </node>
+
+</launch>
+
