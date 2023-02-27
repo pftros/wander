@@ -12,5 +12,9 @@
         respawn="false" output="screen">
   </node>
 
+  <!-- Start rviz visualization -->
+  <node name="rviz" pkg="rviz" type="rviz" respawn="false">
+  </node>
+
 </launch>
 
